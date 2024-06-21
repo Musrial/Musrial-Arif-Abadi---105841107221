@@ -1,12 +1,13 @@
 import { StyleSheet, View } from "react-native";
 import React from "react";
-import { AppContent } from "./components/Button";
+import { AppContent, ButtonCustom } from "./components/Button";
 
 const App = () => {
   return (
-    <view style= {styles.container}>
+    <View style={styles.container}>
+      <ButtonCustom/>
       <AppContent/>
-    </view>
+    </View>
   );
 };
 
