@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, Text, TextInput, View, TouchableOpacity, Image, } from 'react-native';
 import { ScrollView } from "react-native-web";
 
-const signUp = () => {
+const SignUp = () => {
     return (
         <ScrollView contentContainerStyle = { styles.container }>
             <Text style = { styles.text }> Sign Up </Text>
@@ -95,4 +95,4 @@ const styles = StyleSheet.create({
     }
 );
 
-export default signUp;
+export default SignUp;
