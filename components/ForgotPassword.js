@@ -15,11 +15,11 @@ const Login = () => {
                 </View>
 
         <View style = { styles.AlreadyTextContainer}>
-            <Text style = { styles.AlreadyText}> Use a Phone Number  ? </Text>
+            <Text style = { styles.AlreadyText}> Use a Phone Number ? </Text>
         </View>
         
             <TouchableOpacity style = { styles.button }>
-                <Text style = {{ color: "white", textAlign: "center", fontWeight: "bold", fontSize: 15}}>Log In</Text>
+                <Text style = {{ color: "white", textAlign: "center", fontWeight: "bold", fontSize: 15}}>Send Verification</Text>
             </TouchableOpacity>
 
         </ScrollView>

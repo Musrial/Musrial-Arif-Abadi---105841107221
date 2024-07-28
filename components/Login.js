@@ -1,8 +1,8 @@
 import React from "react";
 import { StyleSheet, Text, TextInput, View, TouchableOpacity, Image, } from 'react-native';
-import { ScrollView } from "react-native-web";
+import { ScrollView } from "react-native";
 
-const Login = () => {
+const Login = ({ navigation }) => {
     return (
         <ScrollView contentContainerStyle = { styles.container }>
             <Text style = { styles.text }> Login </Text>
@@ -16,10 +16,12 @@ const Login = () => {
                 </View>
 
         <View style = { styles.AlreadyTextContainer}>
+            <TouchableOpacity onPress={() => navigation.navigate('ForgotPassword')}>
             <Text style = { styles.AlreadyText}> Forgot Password ? </Text>
+            </TouchableOpacity>
         </View>
         
-            <TouchableOpacity style = { styles.button }>
+            <TouchableOpacity onPress={() => navigation.navigate('MyTabs')} style = { styles.button }>
                 <Text style = {{ color: "white", textAlign: "center", fontWeight: "bold", fontSize: 15}}>Log In</Text>
             </TouchableOpacity>
 

@@ -1,8 +1,8 @@
 import React from "react";
 import { StyleSheet, Text, TextInput, View, TouchableOpacity, Image, } from 'react-native';
-import { ScrollView } from "react-native-web";
+import { ScrollView } from "react-native";
 
-const SignUp = () => {
+const SignUp = ({ navigation }) => {
     return (
         <ScrollView contentContainerStyle = { styles.container }>
             <Text style = { styles.text }> Sign Up </Text>
@@ -20,7 +20,9 @@ const SignUp = () => {
                 </View>
 
         <View style = { styles.AlreadyTextContainer}>
+        <TouchableOpacity onPress={() => navigation.navigate('Login')}>
             <Text style = { styles.AlreadyText}> Already have an account? </Text>
+            </TouchableOpacity>
         </View>
         
             <TouchableOpacity style = { styles.button }>
